@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: "mostrar mensaje"
-        run: echo "Hola Mundillo pillo"
+        run: echo "Hola Mundillo este mi practica de github actions"
       
       - name: "Mostrando variables de entorno"
         if: ${{ env.platform == 'aws' }}
