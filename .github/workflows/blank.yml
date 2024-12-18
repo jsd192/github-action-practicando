@@ -3,7 +3,7 @@ name: CI
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "main","dev-practica" ]
+    branches: [ "main","dev-practica","qa-practica" ]
 
 jobs:
   # This workflow contains a single job called "build"
