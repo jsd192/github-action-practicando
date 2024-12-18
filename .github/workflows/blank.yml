@@ -34,6 +34,11 @@ jobs:
 
           echo "Esto es el valor de username: ${{env.username}}"
           echo "Esto es el valor de password: ${{env.password}}"
+      
+      - name: "MOstrando valores solo si el usuario es correcto"
+        if: ${{ env.username != '' && env.password != '' }}
+        run: |
+          echo "si existe el usuario y su contraseña"
 
       - name: "Mostrando variables por defecto"
         run: |
